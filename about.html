@@ -3,39 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - TMOCI</title>
+    <title>Mandate — TMOCI</title>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="77b870d6-4488-4274-8e21-391006f8194e"></script>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #fcfcfc; color: #111; margin: 0; padding: 0; line-height: 1.7; }
-        header { border-bottom: 1px solid #eaeaea; padding: 2rem 10%; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.1rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
-        nav a { margin-left: 2rem; text-decoration: none; color: #666; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        nav a:hover, nav a.active { color: #000; }
-        main { padding: 4rem 10% 8rem 10%; max-width: 800px; margin: 0 auto; }
-        h1 { font-size: 2.2rem; font-weight: 400; letter-spacing: -0.02em; margin-bottom: 2rem; }
-        p { font-size: 1.05rem; color: #333; margin-bottom: 1.6rem; text-align: justify; }
-        footer { border-top: 1px solid #eaeaea; padding: 2rem 10%; font-size: 0.8rem; color: #888; background: #fcfcfc; text-align: center; }
+        :root {
+            --bg-main: #f5f4f0;
+            --text-primary: #222220;
+            --border-line: #d8d6cf;
+            --accent-muted: #76746e;
+            --font-serif: "Georgia", "Times New Roman", serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: var(--font-serif);
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        header {
+            padding: 3rem 5% 1.5rem 5%;
+            text-align: center;
+            border-bottom: 1px solid var(--border-line);
+        }
+
+        .logo {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--accent-muted);
+            font-family: var(--font-sans);
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            transition: color 0.15s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        main {
+            padding: 4rem 1.5rem 6rem 1.5rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            line-height: 1.3;
+            border-bottom: 1px solid var(--border-line);
+            padding-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: #2c2c2a;
+            margin-bottom: 1.8rem;
+            text-align: justify;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-line);
+            padding: 2.5rem 5%;
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            color: var(--accent-muted);
+            text-align: center;
+            letter-spacing: 0.04em;
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <div class="logo">TMOCI</div>
+        <div class="logo">The Museum of Contemporary Inquiry</div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
-            <a href="archive.html">Research</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html">Overview</a>
+            <a href="about.html" class="active">Mandate</a>
+            <a href="archive.html">Repository</a>
+            <a href="contact.html">Inquiries</a>
         </nav>
     </header>
+
     <main>
         <h1>Institutional Mandate</h1>
         
-        <p>The Museum of Contemporary Inquiry (TMOCI) is an independent international research and documentation platform dedicated to long-term artistic inquiry, critical exhibition practices, and autonomous documentation.</p>
+        <p>The Museum of Contemporary Inquiry (TMOCI) serves as a transnational framework dedicated to long-term artistic inquiry, exhibition theory, and autonomous critical practice. The initiative operates to foster scholarly analysis and provide independent documentation across international cultural landscapes.</p>
         
-        <p>Operating outside commercial gallery systems and market-driven validation, TMOCI establishes permanent conceptual ledgers and spatial research dossiers. By prioritizing intellectual intent over material ownership, the institution serves as a structural counter-weight to art market amnesia.</p>
+        <p>Prioritizing intellectual methodology and rigorous research over commercial imperatives, TMOCI provides an open structure for spatial and theoretical investigations. By documenting critical artistic developments and institutional histories, the museum maintains an accessible forum for curators, academics, and researchers.</p>
         
-        <p>TMOCI collaborates with international scholars, institutions, and practitioners to support specialized projects, cross-disciplinary discourse, and open-access research. Its institutional ledger functions not as a passive repository, but as an active epistemological site—ensuring that uncompromising theoretical inquiry is preserved, analyzed, and sustained across global networks.</p>
+        <p>Through international collaborations, published papers, and open-access research repositories, TMOCI actively engages with contemporary debates surrounding exhibition models, material culture, and artistic autonomy. Its archives exist to ensure that significant theoretical contributions remain documented and publicly accessible for global discourse.</p>
     </main>
-    <footer>&copy; The Museum of Contemporary Inquiry. All rights reserved.</footer>
+
+    <footer>
+        &copy; The Museum of Contemporary Inquiry — All Rights Reserved.
+    </footer>
+
 </body>
 </html>
