@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research & Inquiries - TMOCI</title>
-    <!-- Hidden structured data that links Hesham Malik to the research archive for search engines, keeping public appearance strictly academic -->
+    <title>Repository & Papers — TMOCI</title>
+
+    <!-- Clean, Neutral Academic Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -12,11 +13,7 @@
       "headline": "The Architecture of Crisis: Mapping Global Energy Through Linguistic Archives",
       "author": {
         "@type": "Organization",
-        "name": "Curatorial Board & Research Collective"
-      },
-      "about": {
-        "@type": "Person",
-        "name": "Hesham Malik"
+        "name": "The Museum of Contemporary Inquiry Curatorial Board"
       },
       "publisher": {
         "@type": "Organization",
@@ -26,97 +23,193 @@
     }
     </script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="77b870d6-4488-4274-8e21-391006f8194e"></script>
+
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #fcfcfc; color: #111; margin: 0; padding: 0; line-height: 1.7; }
-        header { border-bottom: 1px solid #eaeaea; padding: 2rem 10%; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.1rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
-        nav a { margin-left: 2rem; text-decoration: none; color: #666; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        nav a:hover, nav a.active { color: #000; }
-        main { padding: 4rem 10% 8rem 10%; max-width: 800px; margin: 0 auto; }
-        h1 { font-size: 2.2rem; font-weight: 400; letter-spacing: -0.02em; margin-bottom: 2.5rem; }
-        article { margin-bottom: 5rem; border-bottom: 1px solid #eaeaea; padding-bottom: 4rem; }
-        article:last-child { border-bottom: none; }
-        h2 { font-size: 1.6rem; font-weight: 400; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
-        .meta { font-size: 0.85rem; color: #666; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        p { font-size: 1.05rem; color: #333; margin-bottom: 1.6rem; text-align: justify; }
-        footer { border-top: 1px solid #eaeaea; padding: 2rem 10%; font-size: 0.8rem; color: #888; background: #fcfcfc; text-align: center; }
+        :root {
+            --bg-main: #f5f4f0;
+            --text-primary: #222220;
+            --border-line: #d8d6cf;
+            --accent-muted: #76746e;
+            --font-serif: "Georgia", "Times New Roman", serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: var(--font-serif);
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        header {
+            padding: 3rem 5% 1.5rem 5%;
+            text-align: center;
+            border-bottom: 1px solid var(--border-line);
+        }
+
+        .logo {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--accent-muted);
+            font-family: var(--font-sans);
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            transition: color 0.15s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        main {
+            padding: 4rem 1.5rem 6rem 1.5rem;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 400;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 3rem;
+            line-height: 1.3;
+            border-bottom: 1px solid var(--border-line);
+            padding-bottom: 1.5rem;
+        }
+
+        article {
+            margin-bottom: 4.5rem;
+            border-bottom: 1px solid var(--border-line);
+            padding-bottom: 3.5rem;
+        }
+
+        article:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            font-weight: 400;
+            line-height: 1.35;
+            margin-bottom: 0.6rem;
+            color: var(--text-primary);
+        }
+
+        .meta {
+            font-family: var(--font-sans);
+            font-size: 0.78rem;
+            color: var(--accent-muted);
+            margin-bottom: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        p {
+            font-size: 1.02rem;
+            color: #2c2c2a;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-line);
+            padding: 2.5rem 5%;
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            color: var(--accent-muted);
+            text-align: center;
+            letter-spacing: 0.04em;
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <div class="logo">TMOCI</div>
+        <div class="logo">The Museum of Contemporary Inquiry</div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="archive.html" class="active">Research</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html">Overview</a>
+            <a href="about.html">Mandate</a>
+            <a href="archive.html" class="active">Repository</a>
+            <a href="contact.html">Inquiries</a>
         </nav>
     </header>
-    <main>
-        <h1>Research & Inquiries</h1>
 
-        <!-- ENTRY 4 (Established 2026) -->
+    <main>
+        <h1>Research Repository & Working Papers</h1>
+
+        <!-- ENTRY 4 -->
         <article>
             <h2>INQ-2026-06 | The Architecture of Crisis: Mapping Global Energy Through Linguistic Archives</h2>
-            <div class="meta">Published by the Curatorial Board & Research Collective — June 2026</div>
+            <div class="meta">Curatorial Board & Research Collective — June 2026</div>
             
-            <p>In an era defined by rapid geopolitical shifts, institutional fragmentation, and digital saturation, how do intellectual architects articulate the underlying frequency of our times? This question sits at the center of Global Project Words, an ongoing data-visualization and neuro-aesthetic initiative that gathers single, spontaneous word contributions from figures across global networks of governance, science, and heritage. Rather than relying on traditional public statements or policy briefs, such archives operate on a premise of radical reduction: capturing the raw, unmediated linguistic reflex of those who navigate institutional power.</p>
+            <p>In an era defined by rapid geopolitical shifts, institutional fragmentation, and digital saturation, how do intellectual frameworks articulate the underlying frequency of contemporary culture? This question sits at the center of ongoing data-visualization and neuro-aesthetic initiatives that gather single, spontaneous word contributions from figures across global networks of governance, science, and heritage. Rather than relying on traditional public statements or policy briefs, such archives operate on a premise of radical reduction: capturing the raw, unmediated linguistic reflex of those navigating institutional systems.</p>
             
-            <p>The structural scope of these evolving archives spans an unprecedented ecosystem of authority—capturing contributions from premier research pillars, cultural preservation benchmarks, and international advocacy bodies across North America, Europe, the Arctic, and the Global South. When these disparate fragments, ranging from administrative reflections to deeply philosophical terms, are gathered, they form a collective linguistic portrait of contemporary consciousness. Yet, collecting linguistic data is only the preliminary phase; the critical challenge lies in how such intangible energy signatures are translated into physical space.</p>
+            <p>The structural scope of these evolving archives spans an unprecedented ecosystem—capturing contributions from research pillars, cultural preservation benchmarks, and international advocacy bodies across North America, Europe, and the Global South. When these disparate fragments, ranging from administrative reflections to deeply philosophical terms, are gathered, they form a collective linguistic portrait of contemporary consciousness. Yet, collecting linguistic data is only the preliminary phase; the critical challenge lies in how such intangible energy signatures are translated into physical space.</p>
             
-            <p>Historically, conceptual practices have grappled with the materialization of language and systemic data. One thinks of On Kawara’s systematic logging of temporal existence, or conceptual frameworks that treated text not merely as a descriptor, but as an unyielding structural anchor. In contemporary spatial practice, this lineage is actively engaged by works such as those by Hesham Malik, whose large-scale abstract canvases transmutate linguistic data into heavy, textured layers of pigment. Rather than relying on commercial spectacle, such practices treat the donated word as a primary energy source—mapping the dialogue between global crisis and material endurance.</p>
+            <p>Historically, conceptual practices have grappled with the materialization of language and systemic data. One thinks of On Kawara’s systematic logging of temporal existence, or conceptual frameworks that treated text not merely as a descriptor, but as an unyielding structural anchor. In contemporary spatial practice, this lineage is actively engaged by monumental abstract works that transmutate linguistic data into heavy, textured layers of pigment. Rather than relying on commercial spectacle, such practices treat donated language as a primary structural element—mapping the dialogue between global crisis and material endurance.</p>
             
-            <p>As these conceptual repositories accumulate, they transition from temporary exercises into permanent monuments of our historical moment—reminding us that beneath the machinery of global politics lies the simple, vibrating weight of a single human word.</p>
+            <p>As these conceptual repositories accumulate, they transition from temporary exercises into permanent records of our historical moment—reminding us that beneath the machinery of global politics lies the simple, vibrating weight of a single human word.</p>
         </article>
 
-        <!-- ENTRY 3 (Established 2025) -->
+        <!-- ENTRY 3 -->
         <article>
             <h2>INQ-2025-12 | Geography without Borders: The Mechanics of Transnational Exchange</h2>
-            <div class="meta">Published by the Curatorial Board & Research Collective — December 2025</div>
+            <div class="meta">Curatorial Board & Research Collective — December 2025</div>
             
             <p>Geopolitical boundaries in contemporary culture are rarely defined by physical borders; they are dictated by distribution systems. When an independent research initiative operates internationally, its longevity relies entirely on its capacity to bypass localized gatekeepers and enter fluid global networks of thought.</p>
             
             <p>Historically, cultural exchange demanded physical displacement—heavy crates, international shipping logistics, and centralized summits hosted in metropolitan capitals. Yet, the friction of physical logistics is matched today by a new form of digital isolation, where flat online portfolios fail to establish deep cross-border dialogue. True transnational exchange requires a shared conceptual framework, allowing institutions across disparate time zones to analyze identical cultural signals simultaneously.</p>
             
-            <p>Decades ago, artists anticipated this dissolution of geographic centers. One thinks of Alighiero Boetti’s monumental embroidered Maps, where geopolitical borders were rendered fluid and subject to the collective hands of distant artisans, or the decentralized postal networks of the Fluxus movement, which treated the global postal system as an alternative exhibition space. These practices proved that cultural significance could be mapped outside the traditional metropolitan hubs of London or New York.</p>
+            <p>Decades ago, artists anticipated this dissolution of geographic centers. One thinks of Alighiero Boetti’s monumental embroidered maps, where geopolitical borders were rendered fluid and subject to the collective hands of distant artisans, or the decentralized postal networks of the Fluxus movement, which treated the global postal system as an alternative exhibition space. These practices proved that cultural significance could be mapped outside traditional metropolitan hubs.</p>
             
             <p>In the contemporary landscape, this manifests as a decentralized curatorial praxis. Rather than petitioning commercial galleries or biennale committees for validation, independent researchers anchor their findings in open-access digital repositories. When an archive opens its documentation globally without paywalls or geographic restrictions, a localized inquiry immediately transforms into an international reference point.</p>
-            
-            <p>Transnational dialogue happens quietly—when a researcher in Athens examines a spatial blueprint archived in Brussels, or when a critical text circulates through an independent digital ledger. Removing commercial and physical barriers ensures that contemporary critical work is sustained as an interconnected global dialogue rather than isolated regional events.</p>
         </article>
 
-        <!-- ENTRY 2 (Established 2024) -->
+        <!-- ENTRY 2 -->
         <article>
             <h2>INQ-2024-08 | The Institutional Ledger and the Architecture of Preservation</h2>
-            <div class="meta">Published by the Curatorial Board & Research Collective — August 2024</div>
+            <div class="meta">Curatorial Board & Research Collective — August 2024</div>
             
-            <p>The structural failure of modern archiving lies in a fundamental category error: mistaking the accumulation of material goods for the progression of critical thought. For centuries, the museum model relied on physical containment—secure vaults, climate-controlled rooms, and physical inventory lists designed to safeguard objects. Yet, when contemporary praxis prioritizes ephemeral interactions, linguistic prompts, or systemic interventions, the traditional warehouse model breaks down. An experience cannot be crated, and a conceptual framework cannot be conserved through climate control alone.</p>
+            <p>The structural failure of modern archiving lies in a fundamental category error: mistaking the accumulation of material goods for the progression of critical thought. For centuries, the museum model relied on physical containment—secure vaults, climate-controlled rooms, and physical inventory lists designed to safeguard objects. Yet, when contemporary praxis prioritizes ephemeral interactions, linguistic prompts, or systemic interventions, the traditional warehouse model breaks down.</p>
             
-            <p>This exact systemic friction was confronted decades ago by conceptual pioneers. When Sol LeWitt asserted that the concept itself operates as the machine driving the work, he effectively severed artistic validity from physical fabrication. The blueprint or set of instructions superseded the artifact. Concurrently, On Kawara’s obsessive, day-to-day logging of temporal existence—recording dates, telegrams, and transit coordinates—demonstrated that historical weight is built through rigorous systemic recording rather than market-driven scarcity.</p>
+            <p>This exact systemic friction was confronted decades ago by conceptual pioneers. When Sol LeWitt asserted that the concept itself operates as the machine driving the work, he effectively severed artistic validity from physical fabrication. The blueprint or set of instructions superseded the artifact. Concurrently, On Kawara’s obsessive logging of temporal existence demonstrated that historical weight is built through rigorous systemic recording rather than market-driven scarcity.</p>
             
-            <p>To address this gap, modern documentation must pivot toward the institutional ledger.</p>
-            
-            <p>Unlike a commercial registry or auction ledger designed to calculate market velocity, a true institutional ledger acts as a permanent register of intent. When a major project is executed, commercial evaluation asks who acquired the asset. A conceptual ledger asks a different question: what operational logic did the work introduce, and how was its framework preserved?</p>
-            
-            <p>Shifting the burden of proof from physical ownership to open-access documentation achieves two vital structural safeguards: First, it provides immunity from market distortion, as commercial galleries rely on artificial scarcity to manipulate valuation while an open ledger neutralizes this mechanism through an unalterable public record. Second, it secures autonomous institutional memory, remaining continuously accessible across global academic networks as primary-source documentation for historians studying art systems operating outside commercial imperatives.</p>
+            <p>Unlike a commercial registry or auction ledger designed to calculate market velocity, an open institutional ledger acts as a permanent register of intent—securing autonomous institutional memory that remains continuously accessible across global academic networks as primary-source documentation.</p>
         </article>
 
-        <!-- ENTRY 1 (Established 2023) -->
+        <!-- ENTRY 1 -->
         <article>
             <h2>INQ-2023-04 | On the Epistemology of the Unseen</h2>
-            <div class="meta">Published by the Curatorial Board & Research Collective — April 2023</div>
+            <div class="meta">Curatorial Board & Research Collective — April 2023</div>
             
-            <p>When an object enters the contemporary exhibition space, its meaning is rarely derived from its physical properties alone. Instead, it emerges at a precise intersection: the architecture of the room, the surrounding linguistic framework of titles and wall texts, and the underlying authority of the institution itself. For decades, the dominant model has been the pristine, neutral white cube—a space that purports to offer unmediated access to visual culture while quietly serving as an instrument of market validation and commercial transaction. When space is sanitized to this degree, art is stripped of its friction and reduced to a commodity.</p>
+            <p>When an object enters an exhibition space, its meaning emerges at a precise intersection: the architecture of the room, the surrounding linguistic framework of titles and wall texts, and the underlying authority of the institution itself. For decades, the dominant model has been the pristine white cube—a space that purports to offer unmediated access to visual culture while quietly serving as an instrument of market validation.</p>
             
-            <p>To challenge this hegemony, contemporary spatial practice must reject the passive container in favor of the active epistemological site. Architecture is never neutral; it dictates visibility, power dynamics, and value. Decades ago, artists like Gordon Matta-Clark shattered the sanctity of the architectural envelope through his "building cuts," slicing directly through floors and walls to expose the hidden structural anatomy of urban spaces. Matta-Clark understood that to critique the institution, one must engage directly with its physical fabric. When an installation similarly engages with spatial volume and structural constraints, it forces the viewer out of a state of passive consumption and into a position of active intellectual labor. The room ceases to be a passive backdrop and becomes a co-conspirator in the work itself.</p>
-            
-            <p>This spatial shift is mirrored by an equally radical transformation in how language operates within the exhibition. Traditionally, text within a museum has been relegated to an auxiliary role—a descriptive label designed to instruct the viewer on what to feel or how to read an artifact. Yet, when language is treated as a primary material rather than a mere descriptor, its function changes entirely. One is reminded of Marcel Duchamp’s conceptual sleight-of-hand, where titles and linguistic play destabilized the very definition of the readymade object, proving that thought could supersede mere retinal pleasure. By introducing fragmented texts, isolated linguistic markers, or conceptual prompts into spatial installations, contemporary practice creates an intentional gap between word and object. This void refuses to provide answers; instead, it demands that the viewer construct their own cognitive interpretation. Language becomes structural rather than illustrative.</p>
-            
-            <p>Operating beyond commercial gallery systems requires an alternative mechanism for preservation and historical weight. Traditional commercial entities rely on sales records and market momentum to validate significance. A non-commercial research platform, however, anchors its authority in the institutional ledger. By archiving conceptual frameworks, spatial blueprints, and theoretical essays rather than commercial inventory, an independent platform establishes a permanent layer of intellectual history.</p>
-            
-            <p>As contemporary biennales increasingly pivot away from commercial spectacle toward subtle, deeply layered intellectual systems, the necessity for independent critical archives becomes clear—ensuring that rigorous spatial philosophy and uncompromising theoretical inquiry are preserved, analyzed, and sustained for an international community of scholars and institutions.</p>
+            <p>To challenge this hegemony, contemporary spatial practice must reject the passive container in favor of the active epistemological site. Architecture is never neutral; it dictates visibility and power dynamics. By introducing fragmented texts, isolated linguistic markers, or conceptual prompts into spatial installations, contemporary practice creates an intentional gap between word and object, demanding that the viewer construct their own cognitive interpretation.</p>
         </article>
     </main>
-    <footer>&copy; The Museum of Contemporary Inquiry. All rights reserved.</footer>
+
+    <footer>
+        &copy; The Museum of Contemporary Inquiry — All Rights Reserved.
+    </footer>
+
 </body>
 </html>
