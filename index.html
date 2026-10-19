@@ -3,49 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Museum of Contemporary Inquiry - TMOCI</title>
-    <!-- Search Engine & Open Graph Meta Tags -->
-    <meta name="description" content="The Museum of Contemporary Inquiry (TMOCI) is an independent international research and documentation platform dedicated to long-term artistic inquiry, critical exhibition practices, and autonomous documentation.">
-    <meta property="og:title" content="The Museum of Contemporary Inquiry - TMOCI">
-    <meta property="og:description" content="An independent transnational research institution examining architectural theory, museum warehousing, and autonomous cultural frameworks.">
+    <title>The Museum of Contemporary Inquiry — TMOCI</title>
+    <meta name="description" content="The Museum of Contemporary Inquiry (TMOCI) is an international research framework dedicated to long-term artistic inquiry and critical exhibition practices.">
+    <meta property="og:title" content="The Museum of Contemporary Inquiry — TMOCI">
+    <meta property="og:description" content="An international research framework examining exhibition theory, material culture, and contemporary art practice.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tmoci.org">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="77b870d6-4488-4274-8e21-391006f8194e"></script>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #fcfcfc; color: #111; margin: 0; padding: 0; line-height: 1.7; }
-        header { border-bottom: 1px solid #eaeaea; padding: 2rem 10%; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.1rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
-        nav a { margin-left: 2rem; text-decoration: none; color: #666; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        nav a:hover, nav a.active { color: #000; }
-        main { padding: 5rem 10% 8rem 10%; max-width: 800px; margin: 0 auto; }
-        h1 { font-size: 2.6rem; font-weight: 400; letter-spacing: -0.03em; margin-bottom: 1.5rem; line-height: 1.2; }
-        p { font-size: 1.15rem; color: #333; margin-bottom: 2.5rem; text-align: justify; }
-        .home-links { border-top: 1px solid #eaeaea; padding-top: 2rem; display: flex; gap: 3rem; }
-        .home-links a { text-decoration: none; color: #111; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500; }
-        .home-links a:hover { color: #666; text-decoration: underline; }
-        footer { border-top: 1px solid #eaeaea; padding: 2rem 10%; font-size: 0.8rem; color: #888; background: #fcfcfc; text-align: center; }
+        :root {
+            --bg-main: #f5f4f0;
+            --text-primary: #222220;
+            --border-line: #d8d6cf;
+            --accent-muted: #76746e;
+            --font-serif: "Georgia", "Times New Roman", serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: var(--font-serif);
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        header {
+            padding: 3rem 5% 1.5rem 5%;
+            text-align: center;
+            border-bottom: 1px solid var(--border-line);
+        }
+
+        .logo {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--accent-muted);
+            font-family: var(--font-sans);
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            transition: color 0.15s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        main {
+            padding: 4rem 1.5rem 6rem 1.5rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 400;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 2rem;
+            line-height: 1.3;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: #2c2c2a;
+            margin-bottom: 2rem;
+        }
+
+        .home-navigation {
+            margin-top: 3.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-line);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .home-navigation a {
+            display: block;
+            padding: 1rem;
+            background: #edece7;
+            border: 1px solid var(--border-line);
+            text-decoration: none;
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            text-align: center;
+            transition: background 0.2s ease;
+        }
+
+        .home-navigation a:hover {
+            background: #e2e0d8;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-line);
+            padding: 2.5rem 5%;
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            color: var(--accent-muted);
+            text-align: center;
+            letter-spacing: 0.04em;
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <div class="logo">TMOCI</div>
+        <div class="logo">The Museum of Contemporary Inquiry</div>
         <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="archive.html">Research</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" class="active">Overview</a>
+            <a href="about.html">Mandate</a>
+            <a href="archive.html">Repository</a>
+            <a href="contact.html">Inquiries</a>
         </nav>
     </header>
+
     <main>
-        <h1>The Museum of Contemporary Inquiry</h1>
-        <p>TMOCI operates as an independent international research and documentation platform dedicated to long-term artistic inquiry, critical exhibition practices, and autonomous documentation. Functioning outside commercial gallery systems, the institution establishes permanent conceptual ledgers and spatial research dossiers to support transnational discourse.</p>
+        <h1>A Transnational Framework for Critical Exhibition Practice</h1>
         
-        <div class="home-links">
-            <a href="archive.html">Explore Research &rarr;</a>
-            <a href="about.html">Read Mandate &rarr;</a>
-            <a href="contact.html">Institutional Contact &rarr;</a>
+        <p>The Museum of Contemporary Inquiry operates as an autonomous research platform supporting sustained artistic investigations, spatial theory, and critical museum documentation. Through rigorous archival projects and published papers, the institution provides an open forum for contemporary cultural analysis.</p>
+
+        <div class="home-navigation">
+            <a href="archive.html">View Repository</a>
+            <a href="about.html">Institutional Mandate</a>
+            <a href="contact.html">Contact Office</a>
         </div>
     </main>
-    <footer>&copy; The Museum of Contemporary Inquiry. All rights reserved.</footer>
+
+    <footer>
+        &copy; The Museum of Contemporary Inquiry — All Rights Reserved.
+    </footer>
+
 </body>
 </html>
